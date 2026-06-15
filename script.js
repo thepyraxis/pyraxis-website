@@ -378,11 +378,13 @@ if (logoCanvas) {
         const canvasMX = (mx - rect.left) * (logoCanvas.width / rect.width);
         const canvasMY = (my - rect.top) * (logoCanvas.height / rect.height);
         const logoScale = Math.min(logoCanvas.width / logoImg.width, logoCanvas.height / logoImg.height) * 0.8;
+        const centerX = (logoCanvas.width - logoImg.width * logoScale) / 2;
+        const centerY = (logoCanvas.height - logoImg.height * logoScale) / 2;
+
+        lctx.clearRect(0, 0, logoCanvas.width, logoCanvas.height);
+        lctx.drawImage(logoImg, centerX, centerY, logoImg.width * logoScale, logoImg.height * logoScale);
 
         if (!isTouchDevice && mouseInitialized && canvasMX > 0 && canvasMX < logoCanvas.width && canvasMY > 0 && canvasMY < logoCanvas.height) {
-            lctx.clearRect(0, 0, logoCanvas.width, logoCanvas.height);
-            lctx.drawImage(logoImg, (logoCanvas.width - logoImg.width * logoScale) / 2, (logoCanvas.height - logoImg.height * logoScale) / 2, logoImg.width * logoScale, logoImg.height * logoScale);
-            
             lctx.save();
             lctx.globalCompositeOperation = 'source-atop';
             const energyGlow = lctx.createRadialGradient(canvasMX, canvasMY, 0, canvasMX, canvasMY, 65);
@@ -406,18 +408,13 @@ if (logoCanvas) {
                     }
                 }
             }
-
-            for (let i = logoParticles.length - 1; i >= 0; i--) {
-                logoParticles[i].update();
-                if (logoParticles[i].life <= 0) logoParticles.splice(i, 1); else logoParticles[i].draw();
-            }
-        } else {
-            // Static draw for mobile or idle to save CPU
-            if (logoParticles.length === 0) {
-                 lctx.clearRect(0, 0, logoCanvas.width, logoCanvas.height);
-                 lctx.drawImage(logoImg, (logoCanvas.width - logoImg.width * logoScale) / 2, (logoCanvas.height - logoImg.height * logoScale) / 2, logoImg.width * logoScale, logoImg.height * logoScale);
-            }
         }
+
+        for (let i = logoParticles.length - 1; i >= 0; i--) {
+            logoParticles[i].update();
+            if (logoParticles[i].life <= 0) logoParticles.splice(i, 1); else logoParticles[i].draw();
+        }
+
         requestAnimationFrame(animateLogo);
     }
 }
