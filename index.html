@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYRΛXIS — Digital Growth & Automation Studio</title>
+    <meta name="description" content="Websites, automation, and AI systems for growing businesses. Founded by Aman Deep Sharma.">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon_512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Analytics & Tracking -->
+    <meta name="google-site-verification" content="REPLACE_WITH_YOUR_SEARCH_CONSOLE_CODE" />
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-REPLACE_WITH_YOUR_GA4_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-REPLACE_WITH_YOUR_GA4_ID');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "REPLACE_WITH_YOUR_CLARITY_ID");
+    </script>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="#" class="nav-logo">
+            <span class="nav-wordmark">PYRΛXIS</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#system">The System</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+    <!-- HERO -->
+    <section class="hero" id="heroSection">
+        <div class="hero-background">
+            <div class="background-layer layer-noise" data-speed="0.01"></div>
+            <div class="background-layer layer-glow" data-speed="0.02"></div>
+            <div class="layer-hero-image">
+                <canvas id="logoErosionCanvas"></canvas>
+            </div>
+            <canvas class="background-layer layer-particles" id="particlesCanvas" data-speed="0.04"></canvas>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-headline">
+                <span class="headline-silver">Websites,</span>
+                <span class="headline-silver">Automation & AI Systems</span>
+                <span class="headline-accent">That Turn</span>
+                <span class="headline-accent">Leads Into Customers</span>
+            </h1>
+            <p class="hero-founder-line">
+                I'm <strong>Aman Deep Sharma</strong>, founder of PYRΛXIS.
+            </p>
+            <p class="hero-subtext">
+                I build growth systems that attract leads, convert customers, and increase repeat business automatically.
+            </p>
+            <p class="hero-trust-indicator">
+                Growth Systems Built For: <span>Service Businesses • Coaches • Agencies • Local Businesses</span>
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/919837104413" class="btn-primary">Book via WhatsApp</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thepyraxis@gmail.com" class="btn-secondary" target="_blank">Book via Email</a>
+            </div>
+            <p class="hero-microcopy">30 minutes · No pressure · No obligation</p>
+        </div>
+    </section>
+
+    <!-- PROBLEM BAR -->
+    <section class="problem-bar">
+        <div class="problem-inner">
+            <p class="problem-statement reveal">
+                Most service businesses lose customers not because their work is bad, 
+                but because their <strong>systems are broken</strong>— 
+                slow responses, missed follow-ups, no reviews, and zero retention.
+            </p>
+            <div class="problem-pills">
+                <span class="pill reveal reveal-delay-1">Slow Responses</span>
+                <span class="pill reveal reveal-delay-2">Missed Bookings</span>
+                <span class="pill reveal reveal-delay-3">No Follow-Up</span>
+                <span class="pill reveal reveal-delay-4">Weak Social Proof</span>
+            </div>
+            <p class="problem-statement reveal" style="font-size:clamp(18px,2vw,28px); color: var(--silver-500); margin-top: 40px;">
+                The PYRΛXIS Growth System fixes every gap—automatically.
+            </p>
+        </div>
+    </section>
+
+    <!-- SYSTEM FLOW -->
+    <section class="system-path-section" id="system">
+        <div class="section-label reveal">The Blueprint</div>
+        <h2 class="section-title reveal">How The Growth System Works</h2>
+
+        <div class="system-intro reveal">
+            <p class="system-keywords">Attract. Capture. Convert. Retain. Grow.</p>
+            <p class="system-brief">
+                Most businesses operate with disconnected tools and missed opportunities.<br>
+                We connect every stage of the customer journey into one automated engine.
+            </p>
+        </div>
+
+        <div class="system-grid reveal reveal-delay-1">
+            <div class="system-step reveal">
+                <div class="system-step-num">01</div>
+                <div class="system-step-tag">Attract Attention</div>
+                <div class="system-step-name">Website System</div>
+                <div class="system-step-desc">Your website turns visitors into qualified inquiries with clear messaging, trust signals, and conversion-focused design.</div>
+                <div class="system-step-result">RESULT<br><span>+ More Qualified Leads</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">02</div>
+                <div class="system-step-tag">Capture Every Opportunity</div>
+                <div class="system-step-name">AI Receptionist</div>
+                <div class="system-step-desc">Every inquiry is answered instantly, qualified automatically, and guided toward the next step.</div>
+                <div class="system-step-result">RESULT<br><span>+ No Missed Inquiries</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">03</div>
+                <div class="system-step-tag">Convert Interest Into Revenue</div>
+                <div class="system-step-name">Booking Engine</div>
+                <div class="system-step-desc">Customers can book appointments, consultations, or services without waiting for a response.</div>
+                <div class="system-step-result">RESULT<br><span>+ More Appointments</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">04</div>
+                <div class="system-step-tag">Stay Top Of Mind</div>
+                <div class="system-step-name">Follow-Up Engine</div>
+                <div class="system-step-desc">Automated follow-ups nurture leads, answer questions, and move prospects closer to a decision.</div>
+                <div class="system-step-result">RESULT<br><span>+ Higher Sales Velocity</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">05</div>
+                <div class="system-step-tag">Increase Lifetime Value</div>
+                <div class="system-step-name">Retention Engine</div>
+                <div class="system-step-desc">Reminders, offers, and loyalty campaigns bring customers back again and again.</div>
+                <div class="system-step-result">RESULT<br><span>+ Increased Customer LTV</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">06</div>
+                <div class="system-step-tag">Turn Customers Into Marketing</div>
+                <div class="system-step-name">Review Engine</div>
+                <div class="system-step-desc">Happy customers generate reviews, referrals, and social proof automatically.</div>
+                <div class="system-step-result">RESULT<br><span>+ Better Social Proof</span></div>
+            </div>
+            <div class="system-step reveal">
+                <div class="system-step-num">07</div>
+                <div class="system-step-tag">Optimize Everything</div>
+                <div class="system-step-name">Growth Dashboard</div>
+                <div class="system-step-desc">Track every lead, booking, follow-up, review, and customer interaction in one place.</div>
+                <div class="system-step-result">RESULT<br><span>+ Data-Driven Decisions</span></div>
+            </div>
+            <div class="system-step reveal system-final">
+                <div class="system-step-num">08</div>
+                <div class="system-step-tag">The Destination</div>
+                <div class="system-step-name">Business Growth</div>
+                <div class="system-step-desc">The ultimate outcome where automation meets scale, resulting in a predictable and compounding revenue machine.</div>
+                <div class="system-step-result">RESULT<br><span>+ Scalable Revenue</span></div>
+            </div>
+        </div>
+
+        <div class="system-footer reveal">
+            <p class="system-chain">
+                Website <span>→</span> AI <span>→</span> Booking <span>→</span> Follow-Up <span>→</span> Retention <span>→</span> Reviews <span>→</span> Dashboard <span>→</span> Growth
+            </p>
+            <p class="system-conclusion">
+                So every inquiry has a clear path to becoming a customer, a repeat customer, and eventually a referral.
+            </p>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track" id="marqueeTrack">
+            <span class="marquee-item"><span>✦</span> Website Design</span>
+            <span class="marquee-item"><span>✦</span> AI Receptionist</span>
+            <span class="marquee-item"><span>✦</span> WhatsApp Automation</span>
+            <span class="marquee-item"><span>✦</span> Online Ordering</span>
+            <span class="marquee-item"><span>✦</span> Lead Capture Systems</span>
+            <span class="marquee-item"><span>✦</span> Review Automation</span>
+            <span class="marquee-item"><span>✦</span> Customer Follow-Up</span>
+            <span class="marquee-item"><span>✦</span> Booking Automation</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee-item"><span>✦</span> Website Design</span>
+            <span class="marquee-item"><span>✦</span> AI Receptionist</span>
+            <span class="marquee-item"><span>✦</span> WhatsApp Automation</span>
+            <span class="marquee-item"><span>✦</span> Online Ordering</span>
+            <span class="marquee-item"><span>✦</span> Lead Capture Systems</span>
+            <span class="marquee-item"><span>✦</span> Review Automation</span>
+            <span class="marquee-item"><span>✦</span> Customer Follow-Up</span>
+            <span class="marquee-item"><span>✦</span> Booking Automation</span>
+        </div>
+    </div>
+
+    <!-- THE GROWTH SYSTEM -->
+    <section class="feature-strip" id="platform">
+        <div class="feature-visual reveal">
+            <div class="feature-box-outer">
+                <div class="feature-bg"></div>
+                <div class="feature-grid-lines"></div>
+                <div class="feature-center-glow"></div>
+                <div class="feature-ring ring-1"></div>
+                <div class="feature-ring ring-2"></div>
+                <div class="feature-ring ring-3"></div>
+                <div class="feature-center-icon">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4 L28 10 L28 22 L16 28 L4 22 L4 10 Z" stroke="rgba(155,79,255,0.8)" stroke-width="1.5" fill="none"/>
+                        <circle cx="16" cy="16" r="4" fill="rgba(155,79,255,0.4)"/>
+                    </svg>
+                </div>
+                <div class="data-points">
+                    <div class="data-point dp-1"><span class="dp-dot"></span>ADS & SEO</div>
+                    <div class="data-point dp-2"><span class="dp-dot"></span>AI LEAD GEN</div>
+                    <div class="data-point dp-3"><span class="dp-dot"></span>AUTOMATION</div>
+                    <div class="data-point dp-4"><span class="dp-dot"></span>RETENTION</div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-text reveal reveal-delay-2">
+            <div class="feature-tag">// THE GROWTH SYSTEM</div>
+            <h3 class="feature-title">One Connected System<br>That Never Sleeps</h3>
+            <p class="feature-body">
+                Most businesses lose money through gaps in their process. I build connected workflows that find, close, and keep customers for you automatically.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICE CATALOGUE: THE GROWTH STAGES -->
+    <section class="services" id="services">
+        <div class="section-label reveal">Infrastructure</div>
+        <h2 class="section-title reveal">Growth Engine Catalogue</h2>
+
+        <div class="engine-stages-container">
+            <!-- 01 GROWTH STRATEGY -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">01</span>
+                    <h3 class="stage-title">Growth Strategy</h3>
+                    <p class="stage-desc">A complete digital roadmap designed to attract, convert, and retain customers automatically.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048952.webp" alt="Growth System Overview" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 02 WEBSITE SYSTEM -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">02</span>
+                    <h3 class="stage-title">Website System</h3>
+                    <p class="stage-desc">Turn visitors into leads with a high-conversion website built to attract and explain your offer with precision.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048953.webp" alt="Website Growth Engine" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 03 AI RECEPTIONIST -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">03</span>
+                    <h3 class="stage-title">AI Receptionist</h3>
+                    <p class="stage-desc">Capture every inquiry instantly. Qualify leads and book appointments 24/7 without human intervention.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048954.webp" alt="AI Receptionist" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 04 BOOKING ENGINE -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">04</span>
+                    <h3 class="stage-title">Booking Engine</h3>
+                    <p class="stage-desc">Convert interest into appointments. Frictionless scheduling with automated confirmations and reminders.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048955.webp" alt="Booking System" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 05 FOLLOW-UP ENGINE -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">05</span>
+                    <h3 class="stage-title">Follow-Up Engine</h3>
+                    <p class="stage-desc">Automated WhatsApp and email sequences that nurture leads and stay top-of-mind until the deal is closed.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048956.webp" alt="WhatsApp Follow-up" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 06 RETENTION ENGINE -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">06</span>
+                    <h3 class="stage-title">Retention Engine</h3>
+                    <p class="stage-desc">Bring customers back with automated win-back campaigns and loyalty triggers designed to increase LTV.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048960.webp" alt="Retention Engine" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 07 REFERRAL ENGINE -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">07</span>
+                    <h3 class="stage-title">Referral Engine</h3>
+                    <p class="stage-desc">Turn every happy customer into a marketing asset with automated referral and social proof generation.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048957.webp" alt="Lead Capture & Referrals" loading="lazy">
+                </div>
+            </a>
+
+            <!-- 08 REPUTATION ENGINE -->
+            <a href="#contact" class="engine-stage reveal">
+                <div class="stage-content">
+                    <span class="stage-num">08</span>
+                    <h3 class="stage-title">Reputation Engine</h3>
+                    <p class="stage-desc">Generate 5-star reviews on autopilot and resolve issues privately before they build compounding trust.</p>
+                </div>
+                <div class="stage-visual">
+                    <img src="pyr/catalogue/1000048963.webp" alt="Review & Reputation Engine" loading="lazy">
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / PROJECTS -->
+    <section class="portfolio-section" id="work">
+        <div class="section-label reveal">Portfolio</div>
+        <h2 class="section-title reveal">Deployments & Results</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card reveal">
+                <div class="port-visual">
+                    <img src="pyr/catalogue/1000048953.webp" alt="Luxe Dental Project" loading="lazy">
+                </div>
+                <div class="port-content">
+                    <span class="port-category">Architecture // Booking System</span>
+                    <h3 class="port-title">Luxe Dental Clinic</h3>
+                    <p class="port-desc">A complete digital patient experience. From high-conversion architecture to automated reminders, we built a system that keeps the clinic booked 3 weeks in advance.</p>
+                    <div class="port-result">
+                        <span class="port-result-label">System Impact</span>
+                        <span class="port-result-val">+42% Booking Efficiency</span>
+                    </div>
+                    <a href="#contact" class="port-link">[ Project Details ]</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card reveal">
+                <div class="port-visual">
+                    <img src="pyr/catalogue/1000048954.webp" alt="AI Project" loading="lazy">
+                </div>
+                <div class="port-content">
+                    <span class="port-category">AI Integration // Lead Capture</span>
+                    <h3 class="port-title">ServicePro AI Agent</h3>
+                    <p class="port-desc">Deploying a context-aware AI receptionist that qualifies leads and handles technical inquiries in real-time, 24/7 across WhatsApp and the web.</p>
+                    <div class="port-result">
+                        <span class="port-result-label">System Impact</span>
+                        <span class="port-result-val">0 Missed Opportunities</span>
+                    </div>
+                    <a href="#contact" class="port-link">[ Project Details ]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+        <div class="section-label reveal">Process</div>
+        <h2 class="section-title reveal">How Working Together Works</h2>
+        <div class="process-grid">
+            <div class="process-step reveal">
+                <div class="step-num">01</div>
+                <div class="step-name">Discovery Call</div>
+                <div class="step-desc">A free 30-minute conversation to identify your biggest bottlenecks and growth opportunities.</div>
+            </div>
+            <div class="process-step reveal reveal-delay-1">
+                <div class="step-num">02</div>
+                <div class="step-name">Strategy & Plan</div>
+                <div class="step-desc">I design a custom digital blueprint focused on attracting and retaining your specific customers.</div>
+            </div>
+            <div class="process-step reveal reveal-delay-2">
+                <div class="step-num">03</div>
+                <div class="step-name">Build & Launch</div>
+                <div class="step-desc">I build your systems personally. No outsourcing. You get clear updates and a finished system.</div>
+            </div>
+            <div class="process-step reveal reveal-delay-3">
+                <div class="step-num">04</div>
+                <div class="step-name">Support & Scale</div>
+                <div class="step-desc">I ensure the system continues to perform and scale as your business grows.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label reveal">About</div>
+            <div class="about-grid">
+                <div class="about-header reveal">
+                    <h2 class="section-title">Why I Built PYRΛXIS</h2>
+                </div>
+                <div class="about-content reveal reveal-delay-1">
+                    <p class="about-text about-highlight">
+                        I started PYRΛXIS because I saw too many good businesses losing customers to bad systems. I believe that premium design and smart automation shouldn't just be for big tech companies.
+                    </p>
+                    <p class="about-text">
+                        My mission is to help local businesses and growing SMEs reclaim their time. Every system I build is designed to be a silent partner that works while you sleep.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="contact">
+        <div class="cta-bg"></div>
+        <div class="section-label reveal">Connect</div>
+        <h2 class="cta-title reveal reveal-delay-1">
+            <span class="headline-silver">Ready To Grow</span><br>
+            <span class="headline-accent">Your Business?</span>
+        </h2>
+        <p class="cta-sub reveal reveal-delay-2">
+            Book a free thirty-minute discovery call. Let's build systems that save you time and win you more customers.
+        </p>
+        <div class="cta-actions reveal reveal-delay-3">
+            <div class="hero-actions" style="justify-content: center; margin-bottom: 24px;">
+                <a href="https://wa.me/919837104413" class="btn-primary">Book via WhatsApp</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thepyraxis@gmail.com" class="btn-secondary" target="_blank">Book via Email</a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="nav-wordmark">PYRΛXIS</span>
+                <p class="footer-tagline">Digital Growth & Automation Studio.<br>Built personally by Aman Deep Sharma.</p>
+            </div>
+            <div>
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="#services">Website Design</a></li>
+                    <li><a href="#services">AI Receptionist</a></li>
+                    <li><a href="#services">WhatsApp Automation</a></li>
+                    <li><a href="#services">Booking Systems</a></li>
+                    <li><a href="#services">Review Automation</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Connect</div>
+                <ul class="footer-links">
+                    <li><a href="https://instagram.com/thepyraxis" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me/919837104413" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=thepyraxis@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="https://linkedin.com/company/thepyraxis" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Founder</div>
+                <p class="footer-copy">Aman Deep Sharma</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2026 PYRΛXIS · Aman Deep Sharma · All rights reserved.</div>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
